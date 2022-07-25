@@ -1,17 +1,52 @@
 import utils from '../../src/utils';
 
-const space = 'yam.eth';
+const space = 'orbs-network.eth';
 const network = '1';
-const snapshotBlockNumber = 13461847;
+const snapshotBlockNumber = 15210123;
 const strategies = [
-  {
-    name: 'ens-domains-owned',
-    params: {
-      domain: 'sismo.eth'
+    {
+        "name": "multichain",
+        "params": {
+          "symbol": "MULTI",
+          "strategies": [
+            {
+              "name": "orbs-network-delegation",
+              "network": "1",
+              "params": {
+                "address": "0xB97178870F39d4389210086E4BcaccACD715c71d",
+                "decimals": 18
+              }
+            },
+            {
+              "name": "orbs-network-delegation",
+              "network": "137",
+              "params": {
+                "address": "0x513d30e66641cB1f2670b5994DD8E2B61ED3C23c",
+                "decimals": 18
+              }
+            }
+          ]
+        }
     }
-  }
 ];
+
 const addresses = [
+  "0xc5e624d6824e626a6f14457810e794e4603cfee2",
+  "0x63aef7616882f488bca97361d1c24f05b4657ae5",
+  "0x3d726623456e34e8a7f5567f6249ec4d72cc3595",
+  "0x8ddb908c77ccc9cfde28ddf84311cb6fdf3f3125",
+  "0xca565ccb6434e0adf49b2d66df12b0046b013d7f",
+  "0x9520f53fd81c668e8088ae194c40e3f977b73d28",
+  "0x588c28c19e4185a2442c4c3dd9ebd592c61eccb9",
+  "0xa478c2975ab1ea89e8196811f51a7b7ade33eb11",
+  "0xc5e624d6824e626a6f14457810e794e4603cfee2",
+  "0x63aef7616882f488bca97361d1c24f05b4657ae5",
+  "0x3d726623456e34e8a7f5567f6249ec4d72cc3595",
+  "0x8ddb908c77ccc9cfde28ddf84311cb6fdf3f3125",
+  "0xca565ccb6434e0adf49b2d66df12b0046b013d7f",
+  "0x9520f53fd81c668e8088ae194c40e3f977b73d28",
+  "0x588c28c19e4185a2442c4c3dd9ebd592c61eccb9",
+  "0xa478c2975ab1ea89e8196811f51a7b7ade33eb11",
   '0x05e57688C639b0742ea3E940b4E9DC0fb69B1B88',
   '0x1D911BCC079660aaFB772D48B992d50815b7a66d',
   '0xCe2EF28C65e5Db090d75630c98A807da003fb36f',
